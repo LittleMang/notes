@@ -24,14 +24,18 @@ cat id_rsa.pub
 使用密码远程登陆一次vps服务器,进入根目录,进入.ssh目录,把当前目录下的id_rsa.pub改名为authorized_keys
 
 `
-ssh root@xxx.xx.xx.xx
-
 cd ~
+`
 
+`
 cd .ssh
+`
 
+`
 mv -f id_rsa.pub authorized_keys
 `
+
+
 搞定,下次就可以直接登陆
 
 `
