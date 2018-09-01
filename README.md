@@ -1,9 +1,10 @@
 # notes
 遇到的问题以及解决方法记录
 
-ssh免密登陆vps
+## ssh免密登陆vps
 
   本地先生成密钥(默认名称id_rsa,id_rsa_pub)
+  
   
   `
   ssh-keygen -t rsa
@@ -41,3 +42,10 @@ mv -f id_rsa.pub authorized_keys
 `
 ssh root@xxx.xx.xx.xx
 `
+
+
+## 服务端子路由刷新404
+
+[官方配置](https://router.vuejs.org/zh/guide/essentials/history-mode.html)
+
+[nginx配置 详细说明](https://www.cnblogs.com/Miss-mickey/p/6734831.html)
