@@ -10,11 +10,11 @@
   ssh-keygen -t rsa
   `
 
-`
+```
 cd ~
 cd .ssh
 cat id_rsa.pub
-`
+```
 
 把本地公钥文件上传到服务器
 
