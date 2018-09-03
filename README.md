@@ -49,3 +49,32 @@ ssh root@xxx.xx.xx.xx
 [官方配置](https://router.vuejs.org/zh/guide/essentials/history-mode.html)
 
 [nginx配置 详细说明](https://www.cnblogs.com/Miss-mickey/p/6734831.html)
+
+
+## 撤销到git pull之前的状态
+
+`
+git pull --rebase origin master
+`
+
+从远程仓库把代码下载下来再集成。
+rebase保证本地文件夹是干净的。
+这个操作删掉了本地很多文件，若想回到之前的状态。
+
+查看提交记录
+
+`
+git reflog master
+`
+
+commit后面就是上传文件的描述(说明)，可以根据说明找到想回滚的位置。
+
+`
+5e87e7a master@{1}: commit: upload
+`
+
+找到位置执行代码，搞定。
+
+`
+git reset --hard master@{1}
+`
